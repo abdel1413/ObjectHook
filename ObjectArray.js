@@ -14,14 +14,14 @@ function ObjectArray() {
   };
 
   return (
-    <div>
+    <div className="effets">
       <h2>
         {" "}
         Updating a single property color {car.color} without overwritting the
         entire state
       </h2>
       <p>
-        We'll do by destructing the previous state and then just update the
+        We'll do it by destructing the previous state and then just update the
         color
       </p>
       <button type="button" onClick={changeColor}>

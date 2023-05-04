@@ -16,9 +16,9 @@ function UseEffects() {
   }, [count2]); //add count2 as depending variable into the array
 
   return (
-    <div>
+    <div className="effets">
       <h2> Use useEffect for side effect such as fetching data or for timer</h2>
-      <p>the rendered time with empty array{count}</p>
+      <p>the rendered time with empty array is {count}</p>
       <hr />
       <h2> The useEffect hook that's dependant on Variable count2: {count2}</h2>
       <h2>If the count is updated, the effect will run again</h2>
