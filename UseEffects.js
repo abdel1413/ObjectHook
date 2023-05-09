@@ -13,15 +13,20 @@ function UseEffects() {
 
   useEffect(() => {
     setCaculation(() => count2 * 2);
-  }, [count2]); //add count2 as depending variable into the array
+  }, [count2]); //add count2 as dependency variable into the array so the render
+  // is happened anytime there's a change/update
 
   return (
     <div className="effets">
       <h2> Use useEffect for side effect such as fetching data or for timer</h2>
-      <p>the rendered time with empty array is {count}</p>
+      <p> the is time {count} is rendered once when using empty array.</p>
       <hr />
       <h2> The useEffect hook that's dependant on Variable count2: {count2}</h2>
-      <h2>If the count is updated, the effect will run again</h2>
+      <h2>
+        {" "}
+        The effect will happen again anytime the count is updated using click
+        btn
+      </h2>
       <button onClick={() => setCount2((c) => c + 1)}>+</button>
       <p>
         passing count2 {count2} as dependency into[]: [{count2}]

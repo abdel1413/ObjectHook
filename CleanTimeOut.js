@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 
 function Timer() {
   let [count, setCount] = useState(0);
+
   useEffect(() => {
     let timer = setTimeout(() => {
       setCount((count) => count + 1);
@@ -14,7 +15,7 @@ function Timer() {
   return (
     <div className="effets">
       <h2>
-        Need to clean an effect after it's happened so avoind memory leaking{" "}
+        Need to clean an effect after it's happened to avoind memory leaking{" "}
       </h2>
       <h2>
         {" "}
